@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Vujahday+Script&display=swap');
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url("forest.jpg");
+    background-size: cover;
     text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 2px 5px rgba(0,0,0,0.6);
+}
+
+h1.title {
+    font-weight: 700;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button  {
+    width: 140px;
+    height: 40px;
+    background-color: green;
+    color: #FFF;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
