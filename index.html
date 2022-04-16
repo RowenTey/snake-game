@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="snake.css">
+    <link rel="icon" type="image" href="snake.svg">
     <script defer src="snake.js"></script>
 </head>
 <body>
-    <h1>Snake Game</h1>
+    <h1 class="title">Snake Game</h1>
     <canvas id="board"></canvas>
-    <h1 id="score">Points: 0</h1>
+    <div id="bottom">
+        <h1 id="score">Points: 0</h1>
+        <button id="reset">Reset</button>
+    </div>
 </body>
 </html>

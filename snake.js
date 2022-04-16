@@ -71,16 +71,12 @@ function update() {
     //  game over conditions
     if (snakeX < 0 || snakeX > cols*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
         gameOver = true;
-        points = 0;
-        score.innerHTML = "Points: " + points;
         alert("Game Over!");
     }
 
     for (let i=1; i<snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
             gameOver = true;
-            points = 0;
-            score.innerHTML = "Points: " + points;
             alert("Game Over!");
         }
     }
@@ -110,3 +106,8 @@ function placeFood() {
     foodX = Math.floor(Math.random() * cols) * blockSize;
     foodY = Math.floor(Math.random() * rows) * blockSize;
 }
+
+let rst = document.getElementById('reset');
+rst.addEventListener('click', () => {
+    location.reload();
+})
