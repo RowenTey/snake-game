@@ -3,4 +3,4 @@ Project for me to practice Javascript.
 
 ## Features
 - [x] Points
-- [ ] Reset button
+- [x] Reset button
